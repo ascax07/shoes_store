@@ -79,6 +79,7 @@ public class clienteController {
             cliente.setTelefono(clienteUpdate.getTelefono());
             cliente.setDireccion(clienteUpdate.getDireccion());
             cliente.setCiudad(clienteUpdate.getCiudad());
+            cliente.setCorreo(clienteUpdate.getCorreo());
             cliente.setEstado(clienteUpdate.getEstado());
             
             clienteService.save(cliente);
