@@ -80,6 +80,7 @@ public class ventaController {
             ventas.setCliente(ventasUpdate.getCliente());
             ventas.setTotal(ventasUpdate.getTotal());
             ventas.setEstado(ventasUpdate.getEstado());
+            ventas.setFecha_venta(ventasUpdate.getFecha_venta());
             
             ventasService.save(ventas);
             return new ResponseEntity<>("Guardado", HttpStatus.OK);

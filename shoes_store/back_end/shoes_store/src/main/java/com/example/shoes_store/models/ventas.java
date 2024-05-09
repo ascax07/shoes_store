@@ -26,6 +26,11 @@ public class ventas {
 	    
 		@Column(name="estado", nullable=false, length = 2)
 		private String estado;
+		
+		@Column(name="fecha_venta", nullable=false)
+		private String fecha_venta;
+		
+	
 
 		
 	
@@ -34,15 +39,15 @@ public class ventas {
 		}
 
 
-
-		public ventas(String id_venta, com.example.shoes_store.models.cliente cliente, String total, String estado) {
+		public ventas(String id_venta, com.example.shoes_store.models.cliente cliente, String total, String estado,
+				String fecha_venta) {
 			super();
 			this.id_venta = id_venta;
 			this.cliente = cliente;
 			this.total = total;
 			this.estado = estado;
+			this.fecha_venta = fecha_venta;
 		}
-
 
 
 		public String getId_venta() {
@@ -50,11 +55,9 @@ public class ventas {
 		}
 
 
-
 		public void setId_venta(String id_venta) {
 			this.id_venta = id_venta;
 		}
-
 
 
 		public cliente getCliente() {
@@ -62,11 +65,9 @@ public class ventas {
 		}
 
 
-
 		public void setCliente(cliente cliente) {
 			this.cliente = cliente;
 		}
-
 
 
 		public String getTotal() {
@@ -74,11 +75,9 @@ public class ventas {
 		}
 
 
-
 		public void setTotal(String total) {
 			this.total = total;
 		}
-
 
 
 		public String getEstado() {
@@ -86,16 +85,20 @@ public class ventas {
 		}
 
 
-
 		public void setEstado(String estado) {
 			this.estado = estado;
 		}
 
 
-		
-		
+		public String getFecha_venta() {
+			return fecha_venta;
+		}
 
-		
+
+		public void setFecha_venta(String fecha_venta) {
+			this.fecha_venta = fecha_venta;
+		}
+				
 		
 }
 
