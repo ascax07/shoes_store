@@ -49,12 +49,12 @@ function listacliente() {
 
                 // Agregar botón "Editar" y "Eliminar"
                 let botonEditar = document.createElement("a");
-                botonEditar.className = "boton-editar";
+                botonEditar.className = "btn btn-warning";
                 botonEditar.textContent = "Editar";
                 botonEditar.id = "btnEditar";
 
                 let botonEliminar = document.createElement("button");
-                botonEliminar.className = "boton-eliminar";
+                botonEliminar.className = "btn btn-danger";
                 botonEliminar.textContent = "Eliminar";
 
                 // Asignar eventos a los botones
@@ -183,9 +183,6 @@ function listacliente() {
             alert("Error en la petición " + error);
         }
     });
-
-
-
 }
 
 
@@ -293,7 +290,6 @@ function cargarDatosClienteEnModal(idCliente) {
 
 
 // Función para eliminar un cliente
-// Función para eliminar un cliente
 function eliminarcliente(idCliente) {
     $.ajax({
         url: url + idCliente,
@@ -309,3 +305,9 @@ function eliminarcliente(idCliente) {
         }
     });
 }
+
+
+
+
+
+

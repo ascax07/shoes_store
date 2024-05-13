@@ -1,0 +1,18 @@
+  /* Estilos adicionales */
+  .container {
+    margin-top: 50px;
+  }
+  #left-container {
+    border-right: 1px solid #ccc;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  .form-control {
+    display: inline-block;
+    width: auto;
+  }
+  .total-container {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }

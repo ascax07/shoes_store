@@ -30,13 +30,13 @@ public class ventasService implements IVentaService{
 	        return listaventas;
 	    }
 	    
-	    /*
+	    
 	    @Override
-		public List<ventas> filtroMedico(String filtro) {
-			List <ventas> listaventas=data.filtroMedico(filtro);
+		public List<ventas> filtroVentas(String filtro) {
+			List <ventas> listaventas=data.filtroVentas(filtro);
 			return listaventas;
 		}
-		*/
+	
 
 	    
 	    @Override

@@ -18,7 +18,7 @@ public class ventas {
 	    private String id_venta;
 
 	  @ManyToOne
-	    @JoinColumn(name = "cliente_ id_cliente", referencedColumnName = "id_cliente")
+	    @JoinColumn(name = "cliente")
 	    private cliente cliente;
 
 	    @Column(name = "total", nullable = false, length = 45)

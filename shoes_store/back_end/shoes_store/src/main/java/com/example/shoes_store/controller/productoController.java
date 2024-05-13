@@ -82,7 +82,6 @@ public class productoController {
             productos.setPorcentaje_descuento(productosUpdate.getPorcentaje_descuento());
             productos.setEstado(productosUpdate.getEstado());
             
-            
             productoService.save(productos);
             return new ResponseEntity<>("Guardado", HttpStatus.OK);
         } else {
